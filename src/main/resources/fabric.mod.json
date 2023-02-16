@@ -13,7 +13,7 @@
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
+  "license": "https://www.curseforge.com/project/827569/license",
   "icon": "assets/infinite_banner_stack/icon.png",
 
   "environment": "*",
