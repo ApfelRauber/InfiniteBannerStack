@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.seiboldsmuehle.infinite_banner_stack.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinLoomScreen",
+    "MixinBannerDuplicateRecipe",
+    "MixinBannerItem",
+    "MixinLoomScreenHandler"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
