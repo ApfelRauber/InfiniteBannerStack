@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
 
 @Mixin(BannerDuplicateRecipe.class)
-public class MixinBannerDuplicateRecipe {
+public class BannerDuplicateRecipeMixin {
     @ModifyConstant(method = "Lnet/minecraft/recipe/BannerDuplicateRecipe;matches(Lnet/minecraft/inventory/CraftingInventory;Lnet/minecraft/world/World;)Z", constant = @Constant(intValue = 6))
     private int maxBannerPatternLS(int orig) {
         return ServerTickListener.currentServer.getGameRules().get(GameRules.MAX_BANNER_STACK).get();
