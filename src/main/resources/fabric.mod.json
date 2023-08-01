@@ -9,17 +9,23 @@
     "ApfelRauber"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/ApfelRauber/InfiniteBannerStack",
+    "sources": "https://github.com/ApfelRauber/InfiniteBannerStack"
   },
 
-  "license": "https://www.curseforge.com/project/827569/license",
+  "license": "https://github.com/ApfelRauber/InfiniteBannerStack/blob/master/LICENSE",
   "icon": "assets/infinite_banner_stack/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "de.seiboldsmuehle.infinite_banner_stack.infinitebannerstack"
+      "io.github.apfelrauber.infinite_banner_stack.InfiniteBannerStack"
+    ],
+    "client": [
+      "io.github.apfelrauber.infinite_banner_stack.sidedgamerulegetter.ClientGameRulesGetter"
+    ],
+    "server": [
+      "io.github.apfelrauber.infinite_banner_stack.sidedgamerulegetter.ServerGameRulesGetter"
     ]
   },
   "mixins": [
@@ -29,7 +35,7 @@
   "depends": {
     "fabricloader": ">=0.14.21",
     "fabric-api": "*",
-    "minecraft": "~1.20",
+    "minecraft": ">=1.20",
     "java": ">=17"
   },
   "suggests": {

@@ -1,7 +1,7 @@
-package de.seiboldsmuehle.infinite_banner_stack.mixin;
+package io.github.infinite_banner_stack.mixin;
 
-import de.seiboldsmuehle.infinite_banner_stack.GameRules;
-import de.seiboldsmuehle.infinite_banner_stack.ServerTickListener;
+import io.github.infinite_banner_stack.GameRules;
+import io.github.infinite_banner_stack.ServerTickListener;
 import net.minecraft.recipe.BannerDuplicateRecipe;
 import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.recipe.book.CraftingRecipeCategory;

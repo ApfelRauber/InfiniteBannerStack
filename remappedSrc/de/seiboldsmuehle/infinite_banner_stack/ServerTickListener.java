@@ -1,4 +1,4 @@
-package de.seiboldsmuehle.infinite_banner_stack;
+package io.github.infinite_banner_stack;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.server.MinecraftServer;
