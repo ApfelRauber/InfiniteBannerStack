@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 
 @Mixin(LoomScreen.class)
 public class LoomScreenMixin {
-    @ModifyConstant(method = "Lnet/minecraft/client/gui/screen/ingame/LoomScreen;onInventoryChanged()V", constant = @Constant(intValue = 6))
+    @ModifyConstant(method = "onInventoryChanged()V", constant = @Constant(intValue = 6))
     private int maxBannerPattern(int orig) {
         return InfiniteBannerStack.currentGameRules.get(InfiniteBannerStackGameRules.MAX_BANNER_STACK).get();
     }
