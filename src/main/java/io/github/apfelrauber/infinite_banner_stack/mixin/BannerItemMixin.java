@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 
 @Mixin(BannerItem.class)
 public class BannerItemMixin {
-    @ModifyConstant(method = "Lnet/minecraft/item/BannerItem;appendBannerTooltip(Lnet/minecraft/item/ItemStack;Ljava/util/List;)V", constant = @Constant(intValue = 6))
+    @ModifyConstant(method = "appendBannerTooltip(Lnet/minecraft/item/ItemStack;Ljava/util/List;)V", constant = @Constant(intValue = 6))
     private static int maxBannerPattern(int orig) {
         return InfiniteBannerStack.currentGameRules.get(InfiniteBannerStackGameRules.MAX_BANNER_STACK).get();
     }
