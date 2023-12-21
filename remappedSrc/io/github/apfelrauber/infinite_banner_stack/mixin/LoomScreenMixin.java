@@ -1,5 +1,6 @@
 package io.github.apfelrauber.infinite_banner_stack.mixin;
 
+
 import io.github.apfelrauber.infinite_banner_stack.InfiniteBannerStack;
 import io.github.apfelrauber.infinite_banner_stack.InfiniteBannerStackGameRules;
 import net.minecraft.client.gui.screen.ingame.LoomScreen;
