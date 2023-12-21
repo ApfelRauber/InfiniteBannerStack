@@ -14,7 +14,7 @@ public class BannerDuplicateRecipeMixin {
     private int maxBannerPatternLS(int orig) {
         return InfiniteBannerStack.currentGameRules.get(InfiniteBannerStackGameRules.MAX_BANNER_STACK).get();
     }
-    @ModifyConstant(method = "craft(Lnet/minecraft/inventory/CraftingInventory;Lnet/minecraft/registry/DynamicRegistryManager;)Lnet/minecraft/item/ItemStack;", constant = @Constant(intValue = 6))
+    @ModifyConstant(method = "craft(Lnet/minecraft/inventory/CraftingInventory;)Lnet/minecraft/item/ItemStack;", constant = @Constant(intValue = 6))
     private int maxBannerPattern(int orig) {
         return InfiniteBannerStack.currentGameRules.get(InfiniteBannerStackGameRules.MAX_BANNER_STACK).get();
     }
